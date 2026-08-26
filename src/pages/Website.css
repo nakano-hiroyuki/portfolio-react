@@ -61,7 +61,7 @@
   font-family: var(--font-display);
   letter-spacing: 0.14em;
   font-size: 0.85rem;
-  background: linear-gradient(0deg, rgba(11, 10, 9, 0.85), transparent);
+  background: linear-gradient(0deg, rgba(251, 249, 244, 0.9), transparent);
   opacity: 0;
   transform: translateY(8px);
   transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);

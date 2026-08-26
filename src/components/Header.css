@@ -11,7 +11,7 @@
 
 .site-header.is-scrolled {
   padding-block: 1rem;
-  background: rgba(11, 10, 9, 0.82);
+  background: rgba(251, 249, 244, 0.85);
   backdrop-filter: blur(10px);
   border-bottom-color: var(--line);
 }
@@ -106,7 +106,7 @@
   position: fixed;
   inset: 0;
   z-index: 300;
-  background: #0b0a09;
+  background: var(--bg-elevated);
   display: flex;
   flex-direction: column;
   justify-content: center;

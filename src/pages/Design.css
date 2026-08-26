@@ -29,7 +29,7 @@
 
 .design-grid--stickers .design-tile {
   aspect-ratio: 1 / 1;
-  background: #17150f;
+  background: var(--bg-elevated);
 }
 
 .design-grid--stickers .design-tile img {
@@ -55,7 +55,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.05em;
   color: var(--text);
-  background: linear-gradient(0deg, rgba(11, 10, 9, 0.9), transparent);
+  background: linear-gradient(0deg, rgba(251, 249, 244, 0.92), transparent);
   opacity: 0;
   transform: translateY(6px);
   transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);

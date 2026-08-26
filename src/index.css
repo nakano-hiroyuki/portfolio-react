@@ -1,16 +1,16 @@
 :root {
-  --bg: #0b0a09;
-  --bg-elevated: #131210;
-  --surface: #18160f14;
-  --surface-solid: #17150f;
-  --line: rgba(245, 241, 232, 0.1);
-  --line-strong: rgba(245, 241, 232, 0.18);
-  --text: #f4efe4;
-  --text-muted: #a89f8f;
-  --text-faint: #726a5c;
-  --accent: #c9a769;
-  --accent-soft: rgba(201, 167, 105, 0.14);
-  --accent-line: rgba(201, 167, 105, 0.4);
+  --bg: #fbf9f4;
+  --bg-elevated: #f3efe5;
+  --surface: #3a341f0a;
+  --surface-solid: #f6f3ec;
+  --line: rgba(30, 26, 18, 0.1);
+  --line-strong: rgba(30, 26, 18, 0.18);
+  --text: #2b271f;
+  --text-muted: #6f6656;
+  --text-faint: #968c78;
+  --accent: #b8863e;
+  --accent-soft: rgba(184, 134, 62, 0.12);
+  --accent-line: rgba(184, 134, 62, 0.4);
 
   --font-display: "Cormorant Garamond", "Shippori Mincho", serif;
   --font-jp: "Shippori Mincho", serif;
@@ -76,7 +76,7 @@ select {
 
 ::selection {
   background: var(--accent);
-  color: #0b0a09;
+  color: #201a10;
 }
 
 /* ---------- layout utilities ---------- */
@@ -214,7 +214,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2822;
+  background: #d8cfba;
   border: 2px solid var(--bg);
   border-radius: 6px;
 }
@@ -249,7 +249,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 10, 9, 0.65) 0%, var(--bg) 92%);
+  background: linear-gradient(180deg, rgba(251, 249, 244, 0.55) 0%, var(--bg) 92%);
 }
 
 .page-hero__content {

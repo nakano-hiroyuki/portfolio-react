@@ -34,7 +34,7 @@
   height: 38px;
   border-radius: 50%;
   border: 1px solid var(--line-strong);
-  background: rgba(11, 10, 9, 0.55);
+  background: rgba(251, 249, 244, 0.75);
   backdrop-filter: blur(4px);
   color: var(--text);
   font-size: 0.75rem;

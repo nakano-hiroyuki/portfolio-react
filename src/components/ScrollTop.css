@@ -10,7 +10,7 @@
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background: rgba(11, 10, 9, 0.7);
+  background: rgba(251, 249, 244, 0.8);
   backdrop-filter: blur(6px);
   border: 1px solid var(--line-strong);
   color: var(--text-muted);
