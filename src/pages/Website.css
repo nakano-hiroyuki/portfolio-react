@@ -1,0 +1,110 @@
+.feature-quote {
+  font-family: var(--font-jp);
+  font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+  letter-spacing: 0.03em;
+}
+
+.feature-quote__en {
+  margin-top: 0.4rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--text-faint);
+  font-size: 0.9rem;
+}
+
+.feature-row__tag {
+  display: inline-block;
+  margin-top: 1.6rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.feature-row__tag em {
+  font-style: normal;
+  font-family: var(--font-jp);
+  color: var(--text-faint);
+  margin-left: 0.6rem;
+  font-size: 0.78rem;
+}
+
+.gallery-section {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--line);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s var(--ease);
+}
+
+.gallery-item span {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.9rem 1.1rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+  font-size: 0.85rem;
+  background: linear-gradient(0deg, rgba(11, 10, 9, 0.85), transparent);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.proto-area {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  text-align: center;
+}
+
+.proto-frame {
+  margin-top: 2rem;
+  border: 1px solid var(--line-strong);
+  overflow: hidden;
+}
+
+.proto-frame iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .proto-frame iframe {
+    height: 380px;
+  }
+}

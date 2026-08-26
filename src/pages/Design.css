@@ -1,0 +1,93 @@
+.design-flyers {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--line);
+}
+
+.design-grid {
+  display: grid;
+  gap: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.design-grid--stickers {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.design-grid--flyers {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.design-tile {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: none;
+  padding: 0;
+  text-align: left;
+}
+
+.design-grid--stickers .design-tile {
+  aspect-ratio: 1 / 1;
+  background: #17150f;
+}
+
+.design-grid--stickers .design-tile img {
+  object-fit: contain;
+  padding: 1.2rem;
+}
+
+.design-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s var(--ease);
+}
+
+.design-tile:hover img {
+  transform: scale(1.06);
+}
+
+.design-tile span {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  background: linear-gradient(0deg, rgba(11, 10, 9, 0.9), transparent);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.design-tile:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.design-copy {
+  text-align: center;
+  font-family: var(--font-jp);
+  color: var(--text-muted);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 1000px) {
+  .design-grid--flyers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .design-grid--stickers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .design-grid--flyers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .design-grid--stickers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
