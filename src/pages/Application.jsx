@@ -51,7 +51,7 @@ export default function Application() {
     <div>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/apps/feature-2.jpg" alt="" />
+          <img src="/images/apps/プログラミング3.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">アプリ開発</Reveal>

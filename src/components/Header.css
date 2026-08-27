@@ -30,35 +30,43 @@
   color: var(--text);
 }
 
-.site-header__clock {
-  display: none;
-  align-items: baseline;
-  gap: 0.6rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: var(--text-faint);
-  font-variant-numeric: tabular-nums;
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.2rem, 2.5vw, 2.2rem);
 }
 
-.site-header__clock span:last-child {
+.site-header__nav a {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  transition: color 0.3s var(--ease);
+}
+
+.site-header__nav a:hover,
+.site-header__nav a.is-active {
   color: var(--accent);
-}
-
-@media (min-width: 720px) {
-  .site-header__clock {
-    display: flex;
-  }
 }
 
 .menu-toggle {
   position: relative;
   z-index: 320;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.7rem;
   background: none;
   border: none;
   padding: 0.4rem 0 0.4rem 0.4rem;
+}
+
+@media (max-width: 760px) {
+  .site-header__nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 }
 
 .menu-toggle span:not(.menu-toggle__label) {

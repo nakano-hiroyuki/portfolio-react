@@ -23,21 +23,21 @@ const WORKS = [
     label: "APPLICATION",
     jp: "アプリ開発",
     desc: "Python / tkinter によるアプリ制作",
-    image: "/images/apps/feature-1.jpg",
+    image: "/images/apps/プログラミング3.jpg",
     to: "/application",
   },
   {
     label: "WEBSITE",
     jp: "サイト制作",
     desc: "HTML / CSS / JavaScript",
-    image: "/images/website/hero.jpg",
+    image: "/images/website/PC1.jpg",
     to: "/website",
   },
   {
     label: "DESIGN",
     jp: "グラフィック",
     desc: "Illustrator / Photoshop",
-    image: "/images/design/flyer-7.png",
+    image: "/images/design/PC9.jpg",
     to: "/design",
   },
 ];
@@ -95,9 +95,11 @@ export default function Home() {
         <div className="container">
           <Reveal className="intro" as="div">
             <p className="intro__lead">
-              視覚的な美しさと機能性、その両方を大切にしながら
+              視覚的な美しさと機能性、
               <br />
-              使う人の心に残るデザインとプロダクトをつくっています。
+              使う人の心に残るデザインを
+              <br />
+              大切にしています。
             </p>
           </Reveal>
 

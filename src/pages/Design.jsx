@@ -33,7 +33,7 @@ export default function Design() {
     <div>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/design/flyer-7.png" alt="" />
+          <img src="/images/design/PC9.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">グラフィック</Reveal>

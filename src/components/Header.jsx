@@ -11,20 +11,10 @@ const NAV_ITEMS = [
   { label: "CONTACT", jp: "お問合せ", path: "/contact" },
 ];
 
-function useClock() {
-  const [now, setNow] = useState(new Date());
-  useEffect(() => {
-    const id = setInterval(() => setNow(new Date()), 1000);
-    return () => clearInterval(id);
-  }, []);
-  return now;
-}
-
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const now = useClock();
 
   useEffect(() => setOpen(false), [location.pathname]);
 
@@ -42,8 +32,6 @@ export default function Header() {
     };
   }, [open]);
 
-  const time = now.toLocaleTimeString("ja-JP", { hour12: false });
-
   return (
     <>
       <header className={`site-header ${scrolled ? "is-scrolled" : ""} ${open ? "is-open" : ""}`}>
@@ -52,10 +40,17 @@ export default function Header() {
             H. NAKANO
           </Link>
 
-          <div className="site-header__clock" aria-hidden="true">
-            <span>TOKYO</span>
-            <span>{time}</span>
-          </div>
+          <nav className="site-header__nav">
+            {NAV_ITEMS.filter((item) => item.path !== "/").map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={location.pathname === item.path ? "is-active" : ""}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
 
           <button
             className="menu-toggle"

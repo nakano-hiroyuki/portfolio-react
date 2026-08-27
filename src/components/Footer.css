@@ -1,6 +1,6 @@
 .site-footer {
   border-top: 1px solid var(--line);
-  background: var(--bg-elevated);
+  background: rgb(238, 238, 238);
   padding-top: clamp(3.5rem, 8vw, 6rem);
 }
 
