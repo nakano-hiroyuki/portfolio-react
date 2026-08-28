@@ -9,12 +9,23 @@
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 24px 50px -28px rgba(43, 39, 31, 0.35);
 }
 
 .about-card__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  transition: transform 0.8s var(--ease);
+}
+
+.about-card__image:hover img {
+  transform: scale(1.04);
+}
+
+.about-card__body .eyebrow {
+  margin-bottom: 0.8rem;
 }
 
 .about-card__body h2 {
@@ -39,6 +50,29 @@
   font-size: 0.95rem;
   line-height: 2.1;
   max-width: 52ch;
+}
+
+.about-card__meta {
+  margin-top: clamp(1.8rem, 4vw, 2.4rem);
+  padding-top: clamp(1.4rem, 3vw, 1.8rem);
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-card__meta dt {
+  font-family: var(--font-jp);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.about-card__meta dd {
+  color: var(--text);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
 }
 
 .skill-section {
@@ -79,8 +113,8 @@
   .about-card {
     grid-template-columns: 1fr;
   }
-  .about-card__image {
-    max-width: 320px;
+  .about-card__visual {
+    max-width: 300px;
     margin: 0 auto;
   }
   .skill-grid {

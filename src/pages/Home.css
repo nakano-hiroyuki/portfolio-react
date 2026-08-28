@@ -189,6 +189,11 @@
   transition: transform 1.1s var(--ease);
 }
 
+.work-card__image--contain img {
+  object-fit: contain;
+  background: #fff;
+}
+
 .work-card:hover .work-card__image img {
   transform: scale(1.08);
 }

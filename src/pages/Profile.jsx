@@ -2,8 +2,8 @@ import Reveal from "../components/Reveal.jsx";
 import Accordion from "../components/Accordion.jsx";
 import "./Profile.css";
 
-const SKILLS_LEFT = ["Python / アプリ開発", "HTML / ホームページ制作", "CSS", "JavaScript", "SQL", "Illustrator"];
-const SKILLS_RIGHT = ["Photoshop", "Inkscape", "Figma", "Word", "Excel", "PowerPoint"];
+const SKILLS_LEFT = ["Python / アプリ開発", "HTML / ホームページ制作", "CSS / レスポンシブデザイン", "JavaScript / React、インタラクション", "SQL", "Illustrator / グラフィック、UIデザイン"];
+const SKILLS_RIGHT = ["Photoshop", "Inkscape", "Figma / ワイヤーフレーム、デザインカンプ", "Word", "Excel", "PowerPoint"];
 
 const ACCORDION_ITEMS = [
   {
@@ -28,13 +28,13 @@ export default function Profile() {
     <div>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/website/feature.jpg" alt="" />
+          <img src="/images/profile/PC2.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">自己紹介</Reveal>
           <Reveal as="h1" delay={80} className="page-hero__title">PROFILE</Reveal>
           <Reveal as="p" delay={160} className="page-hero__lead">
-            美容師専門学校を卒業。筋トレ・サッカー・散歩・King Gnuが好きな37歳。
+            美容師専門学校を卒業。<br />筋トレ・サッカー・散歩・King Gnuが好きな37歳。
             <br />
             WEBデザイナーとして活動中です。
           </Reveal>
@@ -44,10 +44,13 @@ export default function Profile() {
       <section className="pad">
         <div className="container">
           <Reveal as="div" className="about-card">
-            <div className="about-card__image">
-              <img src="/images/profile/portrait.jpg" alt="プロフィールイラスト" />
+            <div className="about-card__visual">
+              <div className="about-card__image">
+                <img src="/images/profile/portrait.jpg" alt="プロフィールイラスト" />
+              </div>
             </div>
             <div className="about-card__body">
+              <span className="eyebrow">PROFILE</span>
               <h2>
                 中野裕之
                 <span>Nakano Hiroyuki</span>
@@ -57,6 +60,20 @@ export default function Profile() {
                 視覚的な魅力と機能性を両立させたものづくりを大切にし、デザインとエンジニアリング双方の視点から
                 プロジェクトに向き合っています。
               </p>
+              <dl className="about-card__meta">
+                <div>
+                  <dt>EXPERIENCE</dt>
+                  <dd>デザイン制作 3年+</dd>
+                </div>
+                <div>
+                  <dt>CURRENT</dt>
+                  <dd>システム開発部 / 開発・運用</dd>
+                </div>
+                <div>
+                  <dt>FOCUS</dt>
+                  <dd>React / フロントエンド学習中</dd>
+                </div>
+              </dl>
             </div>
           </Reveal>
         </div>

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="site-footer__brand">
           <p className="site-footer__mark">H. NAKANO</p>
           <p className="site-footer__tagline">
-            デザインと開発、ふたつの視点でものづくりをする
+            デザインと開発、<br />ふたつの視点でものづくりをする
             <br />
             WEBデザイナー中野裕之のポートフォリオ。
           </p>

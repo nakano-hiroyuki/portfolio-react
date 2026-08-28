@@ -8,6 +8,12 @@ const GENDERS = [
   { value: "other", label: "Other" },
 ];
 
+const SOCIAL_LINKS = [
+  { label: "GitHub", href: "https://github.com/nakano-hiroyuki/portfolio" },
+  { label: "Instagram", href: "https://www.instagram.com/Hiroyuki_nakano.it/" },
+  { label: "X", href: "https://x.com/YYJhgtMwkd10072" },
+];
+
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", gender: "", message: "" });
   const [sent, setSent] = useState(false);
@@ -23,7 +29,7 @@ export default function Contact() {
     <div>
       <section className="page-hero contact-hero">
         <div className="page-hero__bg">
-          <img src="/images/contact/bg.jpg" alt="" />
+          <img src="/images/contact/PC10.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">お問合せ</Reveal>
@@ -37,10 +43,51 @@ export default function Contact() {
       </section>
 
       <section className="pad">
-        <div className="container container--narrow">
-          <Reveal className="contact-panel">
+        <div className="container contact-grid">
+          <Reveal as="div" className="contact-intro">
+            <span className="eyebrow">GET IN TOUCH</span>
+            <h2 className="section-title">
+              ご質問は
+              <br />
+              こちらから
+            </h2>
+            <p className="contact-intro__lead">
+              制作のご依頼やご質問、ちょっとしたご相談まで、
+              お気軽にお問合せください。内容を確認の上、担当より折り返しご連絡いたします。
+            </p>
+
+            <dl className="contact-intro__meta">
+              <div>
+                <dt>RESPONSE</dt>
+                <dd>通常2〜3営業日以内にご返信いたします</dd>
+              </div>
+              <div>
+                <dt>FOLLOW</dt>
+                <dd className="contact-intro__social">
+                  {SOCIAL_LINKS.map((s) => (
+                    <a key={s.label} href={s.href} target="_blank" rel="noreferrer">
+                      {s.label}
+                    </a>
+                  ))}
+                </dd>
+              </div>
+            </dl>
+          </Reveal>
+
+          <Reveal delay={140} className="contact-panel">
             {sent ? (
               <div className="contact-success">
+                <span className="contact-success__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 12.5L10 17.5L19 7.5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
                 <span className="eyebrow">Thank you</span>
                 <h2 className="section-title">送信いたしました</h2>
                 <p>
@@ -48,29 +95,35 @@ export default function Contact() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
-                <div className="field">
-                  <label htmlFor="name">NAME</label>
-                  <input
-                    id="name"
-                    type="text"
-                    placeholder="お名前"
-                    value={form.name}
-                    onChange={update("name")}
-                    required
-                  />
-                </div>
+              <form onSubmit={handleSubmit} noValidate>
+                <div className="field-row">
+                  <div className="field">
+                    <label htmlFor="name">
+                      NAME<span className="required">*</span>
+                    </label>
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="お名前"
+                      value={form.name}
+                      onChange={update("name")}
+                      required
+                    />
+                  </div>
 
-                <div className="field">
-                  <label htmlFor="email">E-MAIL</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="example@email.com"
-                    value={form.email}
-                    onChange={update("email")}
-                    required
-                  />
+                  <div className="field">
+                    <label htmlFor="email">
+                      E-MAIL<span className="required">*</span>
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="example@email.com"
+                      value={form.email}
+                      onChange={update("email")}
+                      required
+                    />
+                  </div>
                 </div>
 
                 <div className="field">
@@ -85,14 +138,17 @@ export default function Contact() {
                           checked={form.gender === g.value}
                           onChange={update("gender")}
                         />
-                        {g.label}
+                        <span className="gender-option__dot" aria-hidden="true" />
+                        <span>{g.label}</span>
                       </label>
                     ))}
                   </div>
                 </div>
 
                 <div className="field">
-                  <label htmlFor="message">MESSAGE</label>
+                  <label htmlFor="message">
+                    MESSAGE<span className="required">*</span>
+                  </label>
                   <textarea
                     id="message"
                     rows={6}

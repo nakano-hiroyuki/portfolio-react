@@ -17,7 +17,15 @@ export default function ScrollTop() {
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="ページの先頭に戻る"
     >
-      <span>&#8593;</span>
+      <svg className="scroll-top__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+          d="M6 14L12 8L18 14"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
       TOP
     </button>
   );

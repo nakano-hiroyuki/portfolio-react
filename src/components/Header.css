@@ -25,10 +25,17 @@
 }
 
 .site-header__mark {
+  display: inline-block;
   font-family: var(--font-display);
   font-size: 1.2rem;
   letter-spacing: 0.14em;
   color: var(--text);
+  transition: color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.site-header__mark:hover {
+  color: rgb(30, 245, 230);
+  transform: translateY(-4px);
 }
 
 .site-header__nav {
@@ -38,15 +45,20 @@
 }
 
 .site-header__nav a {
+  display: inline-block;
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   color: var(--text-muted);
-  transition: color 0.3s var(--ease);
+  transition: color 0.3s var(--ease), transform 0.3s var(--ease);
 }
 
-.site-header__nav a:hover,
 .site-header__nav a.is-active {
   color: var(--accent);
+}
+
+.site-header__nav a:hover {
+  color: rgb(30, 245, 230);
+  transform: translateY(-4px);
 }
 
 .menu-toggle {
@@ -156,11 +168,12 @@
 }
 
 .overlay-nav__en {
+  display: inline-block;
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 8vw, 5rem);
   letter-spacing: 0.04em;
   color: var(--text);
-  transition: color 0.4s var(--ease);
+  transition: color 0.4s var(--ease), transform 0.4s var(--ease);
 }
 
 .overlay-nav__jp {
@@ -170,9 +183,13 @@
   color: var(--text-faint);
 }
 
-.overlay-nav__list a:hover .overlay-nav__en,
 .overlay-nav__list a.is-active .overlay-nav__en {
   color: var(--accent);
+}
+
+.overlay-nav__list a:hover .overlay-nav__en {
+  color: rgb(30, 245, 230);
+  transform: translateY(-4px);
 }
 
 .overlay-nav__footer {
@@ -199,6 +216,12 @@
   gap: 1.5rem;
 }
 
+.overlay-nav__social a {
+  display: inline-block;
+  transition: color 0.35s var(--ease), transform 0.35s var(--ease);
+}
+
 .overlay-nav__social a:hover {
-  color: var(--accent);
+  color: rgb(30, 245, 230);
+  transform: translateY(-4px);
 }

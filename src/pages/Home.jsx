@@ -18,6 +18,7 @@ const WORKS = [
     desc: "経歴・スキル・キャリアプラン",
     image: "/images/profile/portrait.jpg",
     to: "/profile",
+    contain: true,
   },
   {
     label: "APPLICATION",
@@ -124,7 +125,7 @@ export default function Home() {
           <div className="works__grid">
             {WORKS.map((item, i) => (
               <Reveal as={Link} to={item.to} key={item.label} delay={i * 100} className="work-card">
-                <div className="work-card__image">
+                <div className={`work-card__image${item.contain ? " work-card__image--contain" : ""}`}>
                   <img src={item.image} alt={item.jp} />
                 </div>
                 <div className="work-card__body">
@@ -139,19 +140,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pad cta">
-        <div className="container cta__inner">
-          <Reveal as="div">
-            <span className="eyebrow">GET IN TOUCH</span>
-            <h2 className="section-title">お気軽にお問合せください</h2>
-          </Reveal>
-          <Reveal delay={150}>
-            <Link to="/contact" className="btn btn-solid">
-              CONTACT
-            </Link>
-          </Reveal>
-        </div>
-      </section>
     </div>
   );
 }
