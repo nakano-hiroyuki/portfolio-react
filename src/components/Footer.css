@@ -1,6 +1,12 @@
 .site-footer {
+  --text: #f3efe5;
+  --text-muted: rgba(243, 239, 229, 0.7);
+  --text-faint: rgba(243, 239, 229, 0.48);
+  --line: rgba(243, 239, 229, 0.14);
+
   border-top: 1px solid var(--line);
-  background: rgb(238, 238, 238);
+  background: #1c160d;
+  color: var(--text);
   padding-top: clamp(3.5rem, 8vw, 6rem);
 }
 
