@@ -70,7 +70,7 @@ export default function Design() {
           </div>
 
           <Reveal as="p" className="design-copy">
-            日常に、ちょっとしたユーモアを。可愛らしいLINEスタンプ制作。
+            日常に、ちょっとしたユーモアを。<br />可愛らしいLINEスタンプ制作。
           </Reveal>
         </div>
       </section>
@@ -98,7 +98,8 @@ export default function Design() {
           </div>
 
           <Reveal as="p" className="design-copy">
-            伝えたいことを、カタチに。魅力を引き出すパンフレットデザイン。
+            伝えたいことを、カタチに。<br />
+            魅力を引き出すパンフレットデザイン。
           </Reveal>
         </div>
       </section>

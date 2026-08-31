@@ -44,9 +44,9 @@ const WORKS = [
 ];
 
 const STATS = [
-  { value: "3年+", label: "デザイン制作経験" },
-  { value: "40+", label: "制作プロジェクト" },
-  { value: "Lv.236", label: "Progate 学習実績" },
+  { value: "３年+", label: "デザイン制作経験" },
+  { value: "４０+", label: "制作プロジェクト" },
+  { value: "Lv.２３６", label: "Progate 学習実績" },
 ];
 
 export default function Home() {

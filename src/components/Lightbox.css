@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   z-index: 500;
-  background: rgba(251, 249, 244, 0.95);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
@@ -34,14 +34,14 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid var(--line-strong);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   background: transparent;
-  color: var(--text);
+  color: #fff;
   font-size: 1.4rem;
   line-height: 1;
 }
 
 .lightbox__close:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: rgb(30, 245, 230);
+  color: rgb(30, 245, 230);
 }
