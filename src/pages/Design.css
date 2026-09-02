@@ -14,34 +14,32 @@
 }
 
 .design-grid--flyers {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2.4rem;
 }
 
 .design-tile {
   position: relative;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  border: none;
   background: none;
   padding: 0;
-  text-align: left;
-}
-
-.design-grid--stickers .design-tile {
-  aspect-ratio: 1 / 1;
-  background: var(--bg-elevated);
-}
-
-.design-grid--stickers .design-tile img {
-  object-fit: contain;
-  padding: 1.2rem;
+  text-align: center;
 }
 
 .design-tile img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
+  overflow: hidden;
   transition: transform 1s var(--ease);
+}
+
+.design-grid--stickers .design-tile img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  padding: 0.6rem;
 }
 
 .design-tile:hover img {
@@ -49,21 +47,11 @@
 }
 
 .design-tile span {
-  position: absolute;
-  inset: auto 0 0 0;
-  padding: 0.7rem 0.85rem;
+  display: block;
+  padding: 0.6rem 0.1rem 0;
   font-size: 0.7rem;
   letter-spacing: 0.05em;
   color: var(--text);
-  background: linear-gradient(0deg, rgba(251, 249, 244, 0.92), transparent);
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
-}
-
-.design-tile:hover span {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .design-copy {

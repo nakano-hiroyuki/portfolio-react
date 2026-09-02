@@ -8,7 +8,7 @@ export default function Footer() {
       <Reveal className="container site-footer__grid">
         <div className="site-footer__brand">
           <p className="site-footer__mark">H. NAKANO</p>
-          <p className="site-footer__tagline">
+          <p className="site-footer__mark site-footer__mark--desc">
             デザインと開発、<br />ふたつの視点でものづくりをする
             <br />
             WEBデザイナー中野裕之のポートフォリオ。

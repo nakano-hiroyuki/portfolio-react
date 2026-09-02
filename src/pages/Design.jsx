@@ -22,8 +22,6 @@ const FLYERS = [
   { src: "/images/design/flyer-8.png", label: "人工芝チラシ" },
   { src: "/images/design/flyer-9.png", label: "飲食店求人チラシ" },
   { src: "/images/design/flyer-10.png", label: "会社説明会チラシ" },
-  { src: "/images/design/flyer-11.png", label: "クリニック建築チラシ" },
-  { src: "/images/design/flyer-12.png", label: "除草サービスチラシ" },
 ];
 
 export default function Design() {
