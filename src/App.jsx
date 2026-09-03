@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useState } from "react";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollTop from "./components/ScrollTop.jsx";
@@ -10,21 +10,29 @@ import Website from "./pages/Website.jsx";
 import Design from "./pages/Design.jsx";
 import Contact from "./pages/Contact.jsx";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-}
-
 export default function App() {
+  const location = useLocation();
+  const [displayLocation, setDisplayLocation] = useState(location);
+  const [transitionStage, setTransitionStage] = useState("fade-in");
+
+  if (location.pathname !== displayLocation.pathname && transitionStage !== "fade-out") {
+    setTransitionStage("fade-out");
+  }
+
   return (
     <>
-      <ScrollToTop />
       <Header />
-      <main>
-        <Routes>
+      <main
+        className={`page-transition page-transition--${transitionStage}`}
+        onAnimationEnd={() => {
+          if (transitionStage === "fade-out") {
+            window.scrollTo(0, 0);
+            setDisplayLocation(location);
+            setTransitionStage("fade-in");
+          }
+        }}
+      >
+        <Routes location={displayLocation}>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/application" element={<Application />} />

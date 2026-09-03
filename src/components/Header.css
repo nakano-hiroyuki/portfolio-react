@@ -22,6 +22,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  max-width: none;
 }
 
 .site-header__mark {
