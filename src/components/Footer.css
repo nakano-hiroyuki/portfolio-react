@@ -12,9 +12,14 @@
 
 .site-footer__grid {
   display: grid;
-  grid-template-columns: 1.6fr repeat(3, 1fr);
+  grid-template-columns: 3fr repeat(3, 1fr);
   gap: 2.5rem;
   padding-bottom: 3rem;
+  max-width: none;
+}
+
+.site-footer__brand {
+  padding-left: clamp(1.5rem, 4vw, 3rem);
 }
 
 .site-footer__mark {

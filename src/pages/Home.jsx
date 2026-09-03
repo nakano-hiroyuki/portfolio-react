@@ -51,6 +51,15 @@ const STATS = [
 
 export default function Home() {
   const [slide, setSlide] = useState(0);
+  const [started, setStarted] = useState(false);
+
+  useEffect(() => {
+    const raf1 = requestAnimationFrame(() => {
+      const raf2 = requestAnimationFrame(() => setStarted(true));
+      return () => cancelAnimationFrame(raf2);
+    });
+    return () => cancelAnimationFrame(raf1);
+  }, []);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -68,7 +77,7 @@ export default function Home() {
               key={src}
               src={src}
               alt=""
-              className={`hero__slide ${i === slide ? "is-active" : ""}`}
+              className={`hero__slide ${i === slide && started ? "is-active" : ""}`}
             />
           ))}
           <div className="hero__overlay" />
