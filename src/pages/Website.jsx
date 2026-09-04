@@ -8,7 +8,7 @@ const FEATURES = [
     en: "Innovating Technology to Shape the Future",
     tag: "FEATURES",
     tagJa: "特徴",
-    body: "シンプルなナビゲーションに、ユーザー目線でわかりやすい美しいレイアウトを心がけています。",
+    body: "シンプルなナビゲーションに、ユーザー目線でわかりやすいレイアウトを心がけています。",
     image: "/images/website/VR.jpg",
   },
   {
@@ -16,7 +16,7 @@ const FEATURES = [
     en: "Creativity Spun from Art and Technology",
     tag: "COMMITMENT",
     tagJa: "こだわり",
-    body: "デザイン性に深みを出し、個性的な世界観を表現することにこだわっています。",
+    body: "視覚的な美しさと機能性、使う人の心に残るデザインを大切にしています。",
     image: "/images/website/feature.jpg",
   },
 ];

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import "./Lightbox.css";
 
 export default function Lightbox({ src, alt, onClose }) {
@@ -15,12 +16,13 @@ export default function Lightbox({ src, alt, onClose }) {
 
   if (!src) return null;
 
-  return (
+  return createPortal(
     <div className="lightbox" onClick={onClose}>
-      <button className="lightbox__close" aria-label="閉じる">
+      <button className="lightbox__close" aria-label="閉じる" onClick={onClose}>
         &times;
       </button>
       <img src={src} alt={alt} onClick={(e) => e.stopPropagation()} />
-    </div>
+    </div>,
+    document.body
   );
 }
