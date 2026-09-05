@@ -5,7 +5,6 @@ import Footer from "./components/Footer.jsx";
 import ScrollTop from "./components/ScrollTop.jsx";
 import Home from "./pages/Home.jsx";
 import Profile from "./pages/Profile.jsx";
-import Application from "./pages/Application.jsx";
 import Website from "./pages/Website.jsx";
 import Design from "./pages/Design.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -40,7 +39,6 @@ export default function App() {
         <Routes location={displayLocation}>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/application" element={<Application />} />
           <Route path="/website" element={<Website />} />
           <Route path="/design" element={<Design />} />
           <Route path="/contact" element={<Contact />} />

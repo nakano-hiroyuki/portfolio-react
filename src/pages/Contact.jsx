@@ -52,8 +52,7 @@ export default function Contact() {
               こちらから
             </h2>
             <p className="contact-intro__lead">
-              制作のご依頼やご質問、ちょっとしたご相談まで、
-              お気軽にお問合せください。内容を確認の上、担当より折り返しご連絡いたします。
+              制作のご依頼やご質問、ちょっとしたご相談など内容を確認の上、折り返しご連絡いたします。
             </p>
 
             <dl className="contact-intro__meta">

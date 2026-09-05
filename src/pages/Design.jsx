@@ -37,8 +37,7 @@ export default function Design() {
           <Reveal as="p" delay={160} className="page-hero__lead">
             Illustrator / Photoshop / Inkscape
             <br />
-            自分のカラーとユーザー目線を大切に、世界観と色のバランスをとりながら
-            視覚的に楽しく、読み手の目を引く設計を心がけています。
+            視覚的な美しさと機能性、<br />使う人の心に残るデザインを大切にしています。
           </Reveal>
         </div>
       </section>

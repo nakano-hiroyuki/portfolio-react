@@ -45,7 +45,6 @@ export default function Footer() {
           <h3>PROJECT</h3>
           <ul>
             <li><Link to="/profile">Profile</Link></li>
-            <li><Link to="/application">Application</Link></li>
             <li><Link to="/website">Website</Link></li>
             <li><Link to="/design">Graphic Design</Link></li>
           </ul>

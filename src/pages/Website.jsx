@@ -1,25 +1,5 @@
-import { useState } from "react";
 import Reveal from "../components/Reveal.jsx";
 import "./Website.css";
-
-const FEATURES = [
-  {
-    ja: "未来を形作る技術革新",
-    en: "Innovating Technology to Shape the Future",
-    tag: "FEATURES",
-    tagJa: "特徴",
-    body: "シンプルなナビゲーションに、ユーザー目線でわかりやすいレイアウトを心がけています。",
-    image: "/images/website/VR.jpg",
-  },
-  {
-    ja: "芸術と技術が紡ぐ創造",
-    en: "Creativity Spun from Art and Technology",
-    tag: "COMMITMENT",
-    tagJa: "こだわり",
-    body: "視覚的な美しさと機能性、使う人の心に残るデザインを大切にしています。",
-    image: "/images/website/feature.jpg",
-  },
-];
 
 const GALLERY = [
   { src: "/images/website/gallery-1.jpg", label: "HOME" },
@@ -31,8 +11,6 @@ const GALLERY = [
 ];
 
 export default function Website() {
-  const [showProto, setShowProto] = useState(false);
-
   return (
     <div>
       <section className="page-hero">
@@ -45,34 +23,8 @@ export default function Website() {
           <Reveal as="p" delay={160} className="page-hero__lead">
             HTML / CSS / JavaScript
             <br />
-            デザイン性の高いポートフォリオサイトを制作。クリエイティブなデザインから
-            バックエンドまで兼ね備えたWEBデザイナーを目指しています。
+            シンプルなナビゲーションに導線、<br />ユーザー目線でわかりやすいレイアウトを心がけています。
           </Reveal>
-        </div>
-      </section>
-
-      <section className="pad">
-        <div className="container">
-          <Reveal as="div" className="section-head">
-            <span className="eyebrow">ポートフォリオサイト</span>
-            <h2 className="section-title">PORTFOLIO SITE</h2>
-          </Reveal>
-
-          {FEATURES.map((f, i) => (
-            <Reveal key={f.tag} className={`feature-row ${i % 2 === 1 ? "is-reverse" : ""}`}>
-              <div className="feature-row__image">
-                <img src={f.image} alt={f.ja} />
-              </div>
-              <div className="feature-row__text">
-                <p className="feature-quote">{f.ja}</p>
-                <p className="feature-quote__en">{f.en}</p>
-                <span className="feature-row__tag">
-                  {f.tag} <em>{f.tagJa}</em>
-                </span>
-                <p>{f.body}</p>
-              </div>
-            </Reveal>
-          ))}
         </div>
       </section>
 
@@ -91,22 +43,6 @@ export default function Website() {
               </Reveal>
             ))}
           </div>
-
-          <Reveal className="proto-area">
-            <button className="btn" onClick={() => setShowProto((v) => !v)}>
-              {showProto ? "デザインカンプを閉じる" : "デザインカンプを見る"}
-            </button>
-            {showProto && (
-              <div className="proto-frame">
-                <iframe
-                  title="デザインカンプ"
-                  src="https://embed.figma.com/proto/HgwcJJ1LMZIWEinVkfIRzH/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%80%80home%E3%83%9A%E3%83%BC%E3%82%B8%E3%80%80%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%B3%E3%83%97?node-id=4-2&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
-                  allow="fullscreen"
-                  allowFullScreen
-                />
-              </div>
-            )}
-          </Reveal>
         </div>
       </section>
     </div>

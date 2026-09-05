@@ -5,7 +5,6 @@ import "./Header.css";
 const NAV_ITEMS = [
   { label: "HOME", jp: "ホーム", path: "/" },
   { label: "PROFILE", jp: "自己紹介", path: "/profile" },
-  { label: "APPLICATION", jp: "アプリ開発", path: "/application" },
   { label: "WEBSITE", jp: "サイト制作", path: "/website" },
   { label: "DESIGN", jp: "グラフィック", path: "/design" },
   { label: "CONTACT", jp: "お問合せ", path: "/contact" },
@@ -66,6 +65,16 @@ export default function Header() {
       </header>
 
       <nav className={`overlay-nav ${open ? "is-open" : ""}`}>
+        <button
+          type="button"
+          className="overlay-nav__close"
+          onClick={() => setOpen(false)}
+          aria-label="メニューを閉じる"
+        >
+          <span />
+          <span />
+        </button>
+
         <ul className="overlay-nav__list">
           {NAV_ITEMS.map((item, i) => (
             <li
@@ -82,21 +91,6 @@ export default function Header() {
             </li>
           ))}
         </ul>
-
-        <div className="overlay-nav__footer">
-          <p>© 2026 Hiroyuki Nakano</p>
-          <div className="overlay-nav__social">
-            <a href="https://github.com/nakano-hiroyuki/portfolio" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <a href="https://www.instagram.com/Hiroyuki_nakano.it/" target="_blank" rel="noreferrer">
-              Instagram
-            </a>
-            <a href="https://x.com/YYJhgtMwkd10072" target="_blank" rel="noreferrer">
-              X
-            </a>
-          </div>
-        </div>
       </nav>
     </>
   );

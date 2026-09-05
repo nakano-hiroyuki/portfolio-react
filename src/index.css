@@ -184,12 +184,13 @@ section {
   padding: 0.95rem 2.2rem;
   border: 1px solid var(--line-strong);
   background: transparent;
-  transition: border-color 0.5s var(--ease), color 0.5s var(--ease), background 0.5s var(--ease);
+  transition: border-color 0.5s var(--ease), color 0.5s var(--ease), background 0.5s var(--ease), transform 0.3s var(--ease);
 }
 
 .btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+  transform: translateY(-4px);
 }
 
 .btn-solid {

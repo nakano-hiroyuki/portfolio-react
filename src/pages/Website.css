@@ -1,38 +1,5 @@
-.feature-row__text .feature-quote {
-  font-family: var(--font-jp);
-  font-size: clamp(1.5rem, 3.2vw, 2.1rem);
-  letter-spacing: 0.3em;
-  line-height: 1.3;
-}
-
-.feature-row__text .feature-quote__en {
-  margin-top: -0.2rem;
-  font-family: var(--font-display);
-  font-style: italic;
-  color: var(--text-faint);
-  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-}
-
-.feature-row__tag {
-  display: inline-block;
-  margin-top: 1.6rem;
-  font-family: var(--font-display);
-  letter-spacing: 0.14em;
-  font-size: 0.95rem;
-  color: var(--accent);
-}
-
-.feature-row__tag em {
-  font-style: normal;
-  font-family: var(--font-jp);
-  color: var(--text-faint);
-  margin-left: 0.6rem;
-  font-size: 0.78rem;
-}
-
 .gallery-section {
-  background: var(--bg-elevated);
-  border-top: 1px solid var(--line);
+  background: var(--bg);
 }
 
 .gallery-grid {
@@ -77,24 +44,6 @@
   transform: translateY(0);
 }
 
-.proto-area {
-  margin-top: clamp(3rem, 6vw, 4.5rem);
-  text-align: center;
-}
-
-.proto-frame {
-  margin-top: 2rem;
-  border: 1px solid var(--line-strong);
-  overflow: hidden;
-}
-
-.proto-frame iframe {
-  width: 100%;
-  height: 600px;
-  border: none;
-  display: block;
-}
-
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -104,8 +53,5 @@
 @media (max-width: 520px) {
   .gallery-grid {
     grid-template-columns: 1fr;
-  }
-  .proto-frame iframe {
-    height: 380px;
   }
 }

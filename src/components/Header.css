@@ -111,6 +111,14 @@
   transform: translateY(-3.5px) rotate(-45deg);
 }
 
+.site-header.is-open .menu-toggle span:not(.menu-toggle__label) {
+  background: #fff;
+}
+
+.site-header.is-open .menu-toggle__label {
+  color: #fff;
+}
+
 .menu-toggle__label {
   order: -1;
   font-size: 0.7rem;
@@ -128,11 +136,13 @@
   position: fixed;
   inset: 0;
   z-index: 300;
-  background: var(--bg-elevated);
+  background: rgba(20, 18, 12, 0.92);
+  backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: clamp(2rem, 8vw, 6rem);
+  padding: clamp(1rem, 4vh, 6rem) clamp(2rem, 8vw, 6rem);
   clip-path: circle(0px at calc(100% - 3rem) 3rem);
   transition: clip-path 0.85s var(--ease);
   pointer-events: none;
@@ -143,10 +153,56 @@
   pointer-events: auto;
 }
 
+.overlay-nav__close {
+  position: absolute;
+  top: clamp(1rem, 4vh, 1.6rem);
+  right: clamp(1.2rem, 5vw, 2rem);
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease) 0.3s, transform 0.3s var(--ease);
+}
+
+.overlay-nav.is-open .overlay-nav__close {
+  opacity: 1;
+}
+
+.overlay-nav__close:hover {
+  transform: translateY(-4px);
+}
+
+.overlay-nav__close span {
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transition: background 0.3s var(--ease);
+}
+
+.overlay-nav__close span:first-child {
+  transform: rotate(45deg);
+}
+
+.overlay-nav__close span:last-child {
+  transform: rotate(-45deg);
+}
+
+.overlay-nav__close:hover span {
+  background: rgb(30, 245, 230);
+}
+
 .overlay-nav__list {
   display: flex;
   flex-direction: column;
-  gap: clamp(0.4rem, 1.4vw, 0.9rem);
+  align-items: flex-start;
+  gap: clamp(0.1rem, 1.2vh, 0.9rem);
 }
 
 .overlay-nav__list li {
@@ -165,64 +221,33 @@
   display: flex;
   align-items: baseline;
   gap: 1.2rem;
-  padding-block: 0.35rem;
+  padding-block: clamp(0.05rem, 0.6vh, 0.35rem);
 }
 
 .overlay-nav__en {
   display: inline-block;
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 8vw, 5rem);
+  font-size: clamp(1.5rem, min(6.5vh, 8vw), 5rem);
   letter-spacing: 0.04em;
-  color: var(--text);
+  color: #fff;
   transition: color 0.4s var(--ease), transform 0.4s var(--ease);
 }
 
 .overlay-nav__jp {
+  display: inline-block;
   font-family: var(--font-jp);
   font-size: 0.85rem;
   letter-spacing: 0.2em;
-  color: var(--text-faint);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.4s var(--ease), transform 0.4s var(--ease);
 }
 
 .overlay-nav__list a.is-active .overlay-nav__en {
   color: var(--accent);
 }
 
-.overlay-nav__list a:hover .overlay-nav__en {
-  color: rgb(30, 245, 230);
-  transform: translateY(-4px);
-}
-
-.overlay-nav__footer {
-  margin-top: clamp(2rem, 6vw, 4rem);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  color: var(--text-faint);
-  opacity: 0;
-  transition: opacity 0.8s var(--ease) 0.3s;
-}
-
-.overlay-nav.is-open .overlay-nav__footer {
-  opacity: 1;
-}
-
-.overlay-nav__social {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.overlay-nav__social a {
-  display: inline-block;
-  transition: color 0.35s var(--ease), transform 0.35s var(--ease);
-}
-
-.overlay-nav__social a:hover {
+.overlay-nav__list a:hover .overlay-nav__en,
+.overlay-nav__list a:hover .overlay-nav__jp {
   color: rgb(30, 245, 230);
   transform: translateY(-4px);
 }
