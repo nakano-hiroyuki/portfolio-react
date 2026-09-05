@@ -29,7 +29,7 @@ export default function Contact() {
     <div>
       <section className="page-hero contact-hero">
         <div className="page-hero__bg">
-          <img src="/images/contact/PC10.jpg" alt="" />
+          <img src="/images/contact/空.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">お問合せ</Reveal>
