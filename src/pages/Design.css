@@ -18,6 +18,17 @@
   gap: 3rem;
 }
 
+.design-grid--banners {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.design-grid--banners .design-tile img {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .design-tile {
   position: relative;
   display: flex;
@@ -40,6 +51,12 @@
   aspect-ratio: 1 / 1;
   object-fit: contain;
   padding: 0.6rem;
+}
+
+.design-grid--flyers .design-tile img {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .design-tile:hover img {
@@ -79,5 +96,9 @@
 
   .design-grid--stickers {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .design-grid--banners {
+    grid-template-columns: 1fr;
   }
 }

@@ -11,6 +11,11 @@ const STICKERS = [
   { src: "/images/design/sticker-5.png", label: "ピンシャー LINEスタンプ" },
 ];
 
+const BANNERS = [
+  { src: "/images/design/EARTH 化粧品バナー.jpg", label: "EARTH 化粧品バナー" },
+  { src: "/images/design/ハンドソープバナー.png", label: "ハンドソープバナー" },
+];
+
 const FLYERS = [
   { src: "/images/design/flyer-3.png", label: "給湯機チラシ" },
   { src: "/images/design/flyer-4.png", label: "ジムチラシ 表面" },
@@ -95,6 +100,34 @@ export default function Design() {
           <Reveal as="p" className="design-copy">
             伝えたいことを、カタチに。<br />
             魅力を引き出すパンフレットデザイン。
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="pad">
+        <div className="container">
+          <Reveal as="div" className="section-head">
+            <span className="eyebrow">バナー</span>
+            <h2 className="section-title">Banner</h2>
+          </Reveal>
+
+          <div className="design-grid design-grid--banners">
+            {BANNERS.map((item, i) => (
+              <Reveal
+                as="button"
+                key={item.src}
+                delay={i * 70}
+                className="design-tile"
+                onClick={() => setActive(item)}
+              >
+                <img src={item.src} alt={item.label} />
+                <span>{item.label}</span>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal as="p" className="design-copy">
+            目に留まり、伝わる。<br />目的に合わせたバナーデザイン。
           </Reveal>
         </div>
       </section>
