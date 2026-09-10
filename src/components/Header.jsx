@@ -6,7 +6,7 @@ const NAV_ITEMS = [
   { label: "HOME", jp: "ホーム", path: "/" },
   { label: "PROFILE", jp: "自己紹介", path: "/profile" },
   { label: "WEBSITE", jp: "サイト制作", path: "/website" },
-  { label: "DESIGN", jp: "グラフィック", path: "/design" },
+  { label: "DESIGN", jp: "デザイン", path: "/design" },
   { label: "CONTACT", jp: "お問合せ", path: "/contact" },
 ];
 
