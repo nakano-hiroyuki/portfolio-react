@@ -3,9 +3,11 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
+import Loading from "./components/Loading.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Loading />
     <BrowserRouter>
       <App />
     </BrowserRouter>
