@@ -66,6 +66,7 @@
   .design-grid--flyers {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .design-grid--stickers {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -75,6 +76,7 @@
   .design-grid--flyers {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .design-grid--stickers {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -80,6 +80,7 @@
   .site-footer__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .site-footer__brand {
     grid-column: 1 / -1;
   }

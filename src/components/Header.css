@@ -100,13 +100,14 @@
   align-items: flex-end;
 }
 
-.menu-toggle > span:not(.menu-toggle__label) + span:not(.menu-toggle__label) {
+.menu-toggle>span:not(.menu-toggle__label)+span:not(.menu-toggle__label) {
   margin-top: 6px;
 }
 
 .site-header.is-open .menu-toggle span:not(.menu-toggle__label):nth-child(1) {
   transform: translateY(3.5px) rotate(45deg);
 }
+
 .site-header.is-open .menu-toggle span:not(.menu-toggle__label):nth-child(2) {
   transform: translateY(-3.5px) rotate(-45deg);
 }

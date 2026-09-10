@@ -96,6 +96,7 @@
   .about-card {
     grid-template-columns: 1fr;
   }
+
   .about-card__visual {
     max-width: 300px;
     margin: 0 auto;
