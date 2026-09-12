@@ -227,9 +227,10 @@ main {
 /* ---------- page transition (fade) ---------- */
 
 .page-transition {
-  animation-duration: 0.45s;
+  animation-duration: 0.55s;
   animation-timing-function: var(--ease);
   animation-fill-mode: both;
+  will-change: opacity, transform;
 }
 
 .page-transition--fade-in {
@@ -237,14 +238,15 @@ main {
 }
 
 .page-transition--fade-out {
-  animation-duration: 0.32s;
+  animation-duration: 0.38s;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
   animation-name: page-fade-out;
 }
 
 @keyframes page-fade-in {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(8px);
   }
 
   to {
@@ -261,7 +263,7 @@ main {
 
   to {
     opacity: 0;
-    transform: translateY(-14px);
+    transform: translateY(-8px);
   }
 }
 

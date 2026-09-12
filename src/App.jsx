@@ -9,7 +9,7 @@ import Website from "./pages/Website.jsx";
 import Design from "./pages/Design.jsx";
 import Contact from "./pages/Contact.jsx";
 
-const FADE_OUT_DURATION = 320; // must match --fade-out animation-duration in index.css
+const FADE_OUT_DURATION = 380; // must match --fade-out animation-duration in index.css
 
 export default function App() {
   const location = useLocation();
