@@ -12,7 +12,9 @@ const STICKERS = [
 ];
 
 const BANNERS = [
-  { src: "/images/design/EARTH 化粧品バナー.jpg", label: "EARTH 化粧品バナー 1200 × 628px" },
+  { src: "/images/design/スイーツバナー.jpg", label: "スイーツバナー 728 × 90px" },
+  { src: "/images/design/イヤホンバナー.jpg", label: "イヤホンバナー 728 × 90px" },
+  { src: "/images/design/EARTH 化粧品バナー.jpg", label: "化粧品バナー 1200 × 628px" },
   { src: "/images/design/スマホバナー.jpg", label: "スマホバナー 1200 × 628px" },
   { src: "/images/design/ハンドソープバナー.jpg", label: "ハンドソープバナー 300 × 250px" },
   { src: "/images/design/エンジニア転職プログラムバナー.jpg", label: "エンジニア転職プログラムバナー 300 × 250px" },
@@ -65,8 +67,8 @@ export default function Design() {
                 className="design-tile"
                 onClick={() => setActive(item)}
               >
-                <img src={item.src} alt={item.label} />
                 <span>{item.label}</span>
+                <img src={item.src} alt={item.label} />
               </Reveal>
             ))}
           </div>
@@ -89,12 +91,12 @@ export default function Design() {
               <Reveal
                 as="button"
                 key={item.src}
-                delay={(i % 6) * 60}
+                delay={(i % 4) * 60}
                 className="design-tile"
                 onClick={() => setActive(item)}
               >
-                <img src={item.src} alt={item.label} />
                 <span>{item.label}</span>
+                <img src={item.src} alt={item.label} />
               </Reveal>
             ))}
           </div>
@@ -122,8 +124,8 @@ export default function Design() {
                 className="design-tile"
                 onClick={() => setActive(item)}
               >
-                <img src={item.src} alt={item.label} />
                 <span>{item.label}</span>
+                <img src={item.src} alt={item.label} />
               </Reveal>
             ))}
           </div>

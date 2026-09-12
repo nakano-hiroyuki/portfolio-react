@@ -2,12 +2,12 @@ import Reveal from "../components/Reveal.jsx";
 import "./Website.css";
 
 const GALLERY = [
-  { src: "/images/website/gallery-1.jpg", label: "HOME" },
-  { src: "/images/website/gallery-2.jpg", label: "WEBSITE" },
+  { src: "/images/website/懐石料理店サイト.jpg", label: "懐石料理店サイト" },
+  { src: "/images/website/産業機械メーカーLP.jpg", label: "産業機械メーカーLP" },
   { src: "/images/website/gallery-3.jpg", label: "HOME / VR" },
   { src: "/images/website/gallery-4.jpg", label: "DESIGN" },
   { src: "/images/website/gallery-5.jpg", label: "CONTACT" },
-  { src: "/images/website/gallery-6.jpg", label: "APPLICATION" },
+  { src: "/images/website/コンサルタント企業サイト.jpg", label: "APPLICATION" },
 ];
 
 export default function Website() {
