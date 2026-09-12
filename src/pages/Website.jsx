@@ -7,7 +7,7 @@ const GALLERY = [
   { src: "/images/website/gallery-3.jpg", label: "HOME / VR" },
   { src: "/images/website/gallery-4.jpg", label: "DESIGN" },
   { src: "/images/website/gallery-5.jpg", label: "CONTACT" },
-  { src: "/images/website/コンサルタント企業サイト.jpg", label: "APPLICATION" },
+  { src: "/images/website/コンサルタント企業サイト.jpg", label: "コンサルタント企業サイト" },
 ];
 
 export default function Website() {
