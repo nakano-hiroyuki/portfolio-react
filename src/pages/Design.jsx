@@ -41,8 +41,8 @@ export default function Design() {
           <img src="/images/design/デザイン背景.jpeg" alt="" />
         </div>
         <div className="container page-hero__content">
-          <Reveal as="div" className="eyebrow">グラフィック</Reveal>
-          <Reveal as="h1" delay={80} className="page-hero__title">GRAPHIC DESIGN</Reveal>
+          <Reveal as="div" className="eyebrow">デザイン</Reveal>
+          <Reveal as="h1" delay={80} className="page-hero__title">DESIGN</Reveal>
           <Reveal as="p" delay={160} className="page-hero__lead">
             Illustrator / Photoshop / Inkscape
             <br />
