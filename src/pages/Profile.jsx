@@ -13,8 +13,6 @@ export default function Profile() {
           <Reveal as="h1" delay={80} className="page-hero__title">PROFILE</Reveal>
           <Reveal as="p" delay={160} className="page-hero__lead">
             美容師専門学校を卒業。<br />筋トレ、美味しいもの食べる、サッカー、<br />King Gnuが好きな37歳。
-            <br />
-            WEBデザイナーとして活動中です。
           </Reveal>
         </div>
       </section>

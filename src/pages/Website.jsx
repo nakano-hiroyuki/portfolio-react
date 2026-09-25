@@ -23,7 +23,7 @@ export default function Website() {
           <Reveal as="p" delay={160} className="page-hero__lead">
             HTML / CSS / JavaScript
             <br />
-            シンプルなナビゲーションに導線、<br />ユーザー目線でわかりやすいレイアウトを心がけています。
+            シンプルなナビゲーションに導線、<br />ユーザー目線のレイアウトを心がけています。
           </Reveal>
         </div>
       </section>
