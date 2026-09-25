@@ -307,13 +307,6 @@ main {
   opacity: 0.98;
 }
 
-.page-hero__bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(251, 249, 244, 0.001) 0%, var(--bg) 92%);
-}
-
 .page-hero__content {
   position: relative;
   z-index: 1;
@@ -324,6 +317,15 @@ main {
   font-weight: 500;
   font-size: clamp(2.8rem, 8vw, 5.5rem);
   letter-spacing: 0.05em;
+  color: white;
+}
+
+.page-hero .eyebrow {
+  color: white;
+}
+
+.page-hero .eyebrow::before {
+  background: white;
 }
 
 .page-hero__lead {

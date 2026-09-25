@@ -43,7 +43,7 @@
 .hero__eyebrow {
   font-size: 0.78rem;
   letter-spacing: 0.4em;
-  color: var(--accent);
+  color: white;
   margin-bottom: 1.5rem;
 }
 
@@ -61,5 +61,5 @@
   font-family: var(--font-jp);
   font-size: clamp(0.95rem, 2vw, 1.15rem);
   letter-spacing: 0.14em;
-  color: white;
+  color: var(--text-muted);
 }
