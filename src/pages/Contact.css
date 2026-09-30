@@ -56,6 +56,10 @@
 
 /* ---------- form panel ---------- */
 
+.contact-panel {
+  align-self: center;
+}
+
 .field-row {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -15,7 +15,7 @@ export default function Website() {
     <div>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/website/PC1.jpg" alt="" />
+          <img src="/images/website/PC2.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">サイト制作</Reveal>

@@ -6,13 +6,13 @@ export default function Profile() {
     <div>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/profile/PC2.jpg" alt="" />
+          <img src="/images/profile/プロフィール.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">自己紹介</Reveal>
           <Reveal as="h1" delay={80} className="page-hero__title">PROFILE</Reveal>
           <Reveal as="p" delay={160} className="page-hero__lead">
-            美容師専門学校を卒業。<br />筋トレ、美味しいもの食べる、サッカー、<br />King Gnuが好きな37歳。
+            美容師専門学校を卒業。<br />筋トレ、美味しいもの食べる、サッカー、<br />観葉植物、King Gnuが好きな37歳。
           </Reveal>
         </div>
       </section>
