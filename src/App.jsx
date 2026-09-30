@@ -25,7 +25,8 @@ export default function App() {
   useEffect(() => {
     if (transitionStage !== "fade-out") return;
     const timer = setTimeout(() => {
-      window.scrollTo(0, 0);
+      // override html's scroll-behavior: smooth so the new page starts at the top
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
       setDisplayLocation(location);
       setTransitionStage("fade-in");
     }, FADE_OUT_DURATION);
