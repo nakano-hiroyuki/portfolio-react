@@ -6,7 +6,7 @@ export default function Profile() {
     <div>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/profile/プロフィール.jpg" alt="" />
+          <img src="/images/profile/観葉植物.jpg" alt="" />
         </div>
         <div className="container page-hero__content">
           <Reveal as="div" className="eyebrow">自己紹介</Reveal>
