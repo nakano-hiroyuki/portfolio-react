@@ -5,6 +5,7 @@ const SLIDES = [
   "/images/hero/tech-1.jpg",
   "/images/hero/desktop-1.jpg",
   "/images/hero/vr.jpg",
+  "/images/hero/テクノロジー2.jpg",
   "/images/hero/city.jpg",
   "/images/hero/network.jpg",
 ];
