@@ -28,7 +28,7 @@ const FLYERS = [
   { src: "/images/design/ピアノ教室チラシ.png", label: "音楽教室チラシ" },
   { src: "/images/design/flyer-8.png", label: "人工芝チラシ" },
   { src: "/images/design/さわやかハンバーグチラシ.png", label: "飲食店求人チラシ" },
-  { src: "/images/design/flyer-10.png", label: "会社説明会チラシ" },
+  { src: "/images/design/さわやか会社説明会チラシ.png", label: "会社説明会チラシ" },
 ];
 
 export default function Design() {
