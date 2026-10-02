@@ -25,7 +25,7 @@ const FLYERS = [
   { src: "/images/design/flyer-4.png", label: "ジムチラシ 表面" },
   { src: "/images/design/flyer-5.png", label: "ジムチラシ 裏面" },
   { src: "/images/design/flyer-6.png", label: "グローバルヘルスチラシ" },
-  { src: "/images/design/flyer-7.png", label: "音楽教室パンフレット" },
+  { src: "/images/design/ピアノ教室チラシ.png", label: "音楽教室チラシ" },
   { src: "/images/design/flyer-8.png", label: "人工芝チラシ" },
   { src: "/images/design/さわやかハンバーグチラシ.png", label: "飲食店求人チラシ" },
   { src: "/images/design/flyer-10.png", label: "会社説明会チラシ" },
