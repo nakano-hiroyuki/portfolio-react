@@ -5,8 +5,6 @@ const GALLERY = [
   { src: "/images/website/懐石料理店サイト.jpg", label: "懐石料理店サイト" },
   { src: "/images/website/化粧品サイト.png", label: "化粧品サイト" },
   { src: "/images/website/産業機械メーカーLP.jpg", label: "産業機械メーカーLP" },
-  { src: "/images/website/gallery-4.jpg", label: "DESIGN" },
-  { src: "/images/website/gallery-5.jpg", label: "CONTACT" },
   { src: "/images/website/コンサルタント企業サイト.jpg", label: "コンサルタント企業サイト" },
 ];
 
