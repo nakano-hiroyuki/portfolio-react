@@ -28,7 +28,7 @@ const FLYERS = [
   { src: "/images/design/flyer-6.png", label: "グローバルヘルスチラシ" },
   { src: "/images/design/ピアノ教室チラシ.png", label: "音楽教室チラシ" },
   { src: "/images/design/flyer-8.png", label: "人工芝チラシ" },
-  { src: "/images/design/flyer-3.png", label: "給湯機チラシ" },
+  { src: "/images/design/給湯機チラシ.jpg", label: "給湯機チラシ" },
 ];
 
 export default function Design() {
