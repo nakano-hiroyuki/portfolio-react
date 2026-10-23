@@ -1,0 +1,23 @@
+.comp-modal {
+  padding: 0;
+}
+
+.comp-modal__scroll {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  padding: clamp(3.5rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem);
+}
+
+.lightbox .comp-modal__img {
+  display: block;
+  width: 100%;
+  max-width: 2495px;
+  max-height: none;
+  height: auto;
+  margin: 0 auto;
+}
+
+.comp-modal .lightbox__close {
+  z-index: 1;
+}
