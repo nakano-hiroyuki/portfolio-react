@@ -9,7 +9,11 @@ const GALLERY = [
     label: "懐石料理店サイト",
     comp: "/images/website/seisui-comp.webp",
   },
-  { src: "/images/website/化粧品サイト.png", label: "化粧品サイト" },
+  {
+    src: "/images/website/化粧品サイト.png",
+    label: "化粧品サイト",
+    comp: "/images/website/earth-comp.webp",
+  },
   { src: "/images/website/産業機械メーカーLP.jpg", label: "産業機械メーカーLP" },
   { src: "/images/website/コンサルタント企業サイト.jpg", label: "コンサルタント企業サイト" },
 ];
