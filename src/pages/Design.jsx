@@ -79,7 +79,7 @@ export default function Design() {
         </div>
       </section>
 
-      <section className="pad design-flyers">
+      <section className="pad">
         <div className="container">
           <Reveal as="div" className="section-head">
             <span className="eyebrow">パンフレット / フライヤー</span>
