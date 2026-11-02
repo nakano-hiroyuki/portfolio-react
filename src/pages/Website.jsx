@@ -15,7 +15,11 @@ const GALLERY = [
     label: "化粧品サイト",
     comp: "/images/website/earth-comp.webp",
   },
-  { src: "/images/website/産業機械メーカーLP.jpg", label: "産業機械メーカーLP" },
+  {
+    src: "/images/website/明和テクノ.png",
+    label: "産業機械メーカーLP",
+    comp: "/images/website/meiwa-comp.webp",
+  },
   { src: "/images/website/コンサルタント企業サイト.jpg", label: "コンサルタント企業サイト" },
 ];
 
