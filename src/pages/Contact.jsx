@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Reveal from "../components/Reveal.jsx";
 import "./Contact.css";
+import Seo from "../components/Seo.jsx";
 
 const GENDERS = [
   { value: "man", label: "Man" },
@@ -27,6 +28,7 @@ export default function Contact() {
 
   return (
     <div>
+      <Seo title="CONTACT" description="WEBデザイナー中野裕之へのお問合せ。ご意見・ご相談はお気軽にどうぞ。" />
       <section className="page-hero contact-hero">
         <div className="page-hero__bg">
           <img src="/images/contact/部屋.jpg" alt="" />

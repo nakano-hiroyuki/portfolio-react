@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
+import Seo from "../components/Seo.jsx";
 
 const SLIDES = [
   "/images/hero/tech-1.jpg",
@@ -31,6 +32,7 @@ export default function Home() {
 
   return (
     <div className="home">
+      <Seo description="WEBデザイナー中野裕之のポートフォリオサイト。デザインとフロントエンド開発、両方の視点でものづくりに取り組んでいます。" />
       <section className="hero">
         <div className="hero__slides">
           {SLIDES.map((src, i) => (

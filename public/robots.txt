@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-react-two-kohl.vercel.app/sitemap.xml

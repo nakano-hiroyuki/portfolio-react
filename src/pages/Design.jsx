@@ -2,6 +2,7 @@ import { useState } from "react";
 import Reveal from "../components/Reveal.jsx";
 import Lightbox from "../components/Lightbox.jsx";
 import "./Design.css";
+import Seo from "../components/Seo.jsx";
 
 const STICKERS = [
   { src: "/images/design/sticker-1.png", label: "秋田柴犬雑種 LINEスタンプ" },
@@ -36,6 +37,7 @@ export default function Design() {
 
   return (
     <div>
+      <Seo title="DESIGN" description="中野裕之が制作したデザイン作品。LINEスタンプ、バナー、チラシなど。" />
       <section className="page-hero">
         <div className="page-hero__bg">
           <img src="/images/design/デザイン背景.jpeg" alt="" />

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Reveal from "../components/Reveal.jsx";
 import CompModal from "../components/CompModal.jsx";
 import "./Website.css";
+import Seo from "../components/Seo.jsx";
 
 const GALLERY = [
   {
@@ -23,6 +24,7 @@ export default function Website() {
 
   return (
     <div>
+      <Seo title="WEBSITE" description="中野裕之が制作したWEBサイトの実績。懐石料理店サイト、化粧品サイト、企業サイト、LPなど。" />
       <section className="page-hero">
         <div className="page-hero__bg">
           <img src="/images/website/PC2.jpg" alt="" />

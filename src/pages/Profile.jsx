@@ -1,9 +1,11 @@
 import Reveal from "../components/Reveal.jsx";
 import "./Profile.css";
+import Seo from "../components/Seo.jsx";
 
 export default function Profile() {
   return (
     <div>
+      <Seo title="PROFILE" description="WEBデザイナー中野裕之のプロフィール。デザイン制作会社での実務経験やスキルを紹介しています。" />
       <section className="page-hero">
         <div className="page-hero__bg">
           <img src="/images/profile/観葉植物.jpg" alt="" />
