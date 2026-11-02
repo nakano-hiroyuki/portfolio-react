@@ -1,7 +1,3 @@
-.design-flyers {
-  background: var(--bg-elevated);
-}
-
 .design-grid {
   display: grid;
   gap: 1.1rem;
