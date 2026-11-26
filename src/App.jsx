@@ -8,6 +8,7 @@ import Profile from "./pages/Profile.jsx";
 import Website from "./pages/Website.jsx";
 import Design from "./pages/Design.jsx";
 import Contact from "./pages/Contact.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const FADE_OUT_DURATION = 380; // must match --fade-out animation-duration in index.css
 
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="/website" element={<Website />} />
           <Route path="/design" element={<Design />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
