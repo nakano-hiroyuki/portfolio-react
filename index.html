@@ -12,8 +12,61 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- ローディング画面：JSバンドルの読み込みを待たずに表示するため、HTMLに直接書く -->
+    <style>
+      #loading {
+        position: fixed;
+        inset: 0;
+        background-color: #0a0a0a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+      }
+      #loading.is-visible {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      #loading .spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-top: 3px solid #fff;
+        border-radius: 50%;
+        animation: loading-spin 1s linear infinite;
+      }
+      @keyframes loading-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
+    <div id="loading"><div class="spinner"></div></div>
+    <script>
+      // 読み込みが0.5秒以上かかったときだけ表示し、完了したらフェードアウトして消す
+      (function () {
+        var el = document.getElementById("loading");
+        var showTimer = setTimeout(function () {
+          el.classList.add("is-visible");
+        }, 500);
+        window.addEventListener("load", function () {
+          clearTimeout(showTimer);
+          if (!el.classList.contains("is-visible")) {
+            el.remove();
+            return;
+          }
+          el.classList.remove("is-visible");
+          setTimeout(function () {
+            el.remove();
+          }, 500);
+        });
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
